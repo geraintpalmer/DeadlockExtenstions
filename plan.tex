@@ -1,0 +1,145 @@
+\documentclass{article}
+
+\usepackage{fullpage}
+\usepackage{parskip}
+\usepackage{setspace}
+\usepackage{mathtools}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+\usetikzlibrary{decorations.markings}
+\usetikzlibrary{calc}
+\usepackage{standalone}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+
+\title{Extending Models of Deadlock in Queueing Networks\\Baulking / Scheduled Vacations}
+\author{}
+\date{}
+
+
+\begin{document}
+\onehalfspacing
+
+\maketitle
+
+\section{Background}
+Consider the queueing network shown in Figure~\ref{fig:1nodenetwork}. This system has one server. Customers arrive randomly at a rate $\Lambda$ per time unit. Customers are served in a First-In-First-Out discipline, and service times are random with mean $\frac{1}{\mu}$. Once a service is completed, there is a probability $r_{11}$ of rejoining the queue, and so a probability $1 - r_{11}$ of leaving the system. (When we say randomly, we mean according to an Exponential distribution).
+
+There is only enough room for $n$ customers to wait in the queue. If the queue is full and a customer arrives from the outside, then that customer is turned away and lost. If the queue is full and a customer finishing service wishes to rejoin the queue then that customer is blocked, remains with the server until room becomes available. For this particular system, room won't become available until the blocked customer himself moves, and so that customer is in fact waiting for himself to move before he can move. This causes \textit{deadlock}, when no more movement occurs.
+
+\begin{figure}[htbp!]
+	\begin{center}
+		\includestandalone[width=\textwidth]{img/1nodeexample}
+		\caption{A one node queueing network that deadlocks.}
+		\label{fig:1nodenetwork}
+	\end{center}
+\end{figure}
+
+Deadlocking systems like this one has been studied by us (please see reading material). This involved detecting when deadlock occurs in computer simulations of queueing network; building Markov chain models of such networks; and investigating the parameters' effects on the time until deadlock $\omega$.
+
+
+\section{Queues with Baulking}
+
+In some cases, customers may choose not to join a queue if the queue is too long at the time of arrival, called baulking. This are usually modelled as a baulking function $b(n)$ which returns a probability of baulking when the customer finds $n$ customers in the queue. These functions may take on a variety of forms, for example:
+
+\begin{equation*}
+b(n) = \frac{n}{N}
+\end{equation*}
+
+\begin{equation*}
+b(n) = 1 - \frac{\beta}{n}
+\end{equation*}
+
+where $N$ denotes the maximum queue size, and $\beta$ is some parameter representing willingness to join the queue.
+
+Now consider the deadlocking system in Figure~\ref{fig:1nodenetwork}, where arriving customers baulk. Let the time to deadlock of this system be denoted by $\hat{\omega}$. No work has been done on this system so far, and we would like you to investigate!
+
+
+\section{Queues with Scheduled Vacations}
+
+Imagine an online shop where orders can arrive to a queue at any time of the day or night. The shop hires one server who processes orders from 9am to 5pm, seven days a week. From 5pm to 9am next day, that server is off duty and no orders can be processed, however orders continue to arrive. That server is on a scheduled vacation. (Note: if the server is mid way through processing an order at 5pm, then he will complete that service before going off duty.)
+Let's call $u$ the time on duty (9am - 5pm), and $v$ the time on vacation (5pm - 9am).
+
+Now consider the deadlocking system in Figure~\ref{fig:1nodenetwork}, where the server has scheduled vacations. Let the time to deadlock of this system be denoted by $\bar{\omega}$. No work has been done on this system so far, and we would like you to investigate!
+
+
+\section{Rough Plan}
+
+Week 1 (Baulking)
+
+\begin{itemize}
+	\item Familiarise yourself with Markov Chains, deadlock work, and Python.
+	\item Get lots of data using Ciw (various parameter sets, baulking functions parameters).
+	\item Find analytical results for each parameter set (edit current Markov chain).
+\end{itemize}
+
+Week 2
+
+\begin{itemize}
+	\item Using Ciw data already obtained, plot $\hat{\omega}$ and investigate the parameters' effect on $\hat{\omega}$ (similar to the plots in reading material, violin plots with analytical mean running through).
+	\item Any other analysis that might arise: Is the behaviour intuitive / explainable? Do any behaviours change? Is there still a threshold? etc.
+\end{itemize}
+
+Week 3-4
+
+\begin{itemize}
+	\item Do the same for vacations.
+	\item Find relationship between $\omega$ and $\bar{\omega}$ / $\hat{\omega}$? (I have some ideas. Maybe use regression analysis. DIFFICULT)
+\end{itemize}
+
+
+
+
+
+% \section{Numerical Method for Finding Median Time to Deadlock with Scheduled Vacations}\label{sec:markovchains}
+
+% Let $P$ denote the discretised transition matrix for the absorbing Markov chain without scheduled vacations (defined in the reading material). Let $P'$ be this same Markov chain, without any transitions that involve a server. Now in the system with scheduled vacations, $P$ describes the system when there are servers on duty, and $P'$ described the system when servers are off duty.
+
+% Let $\Delta t$ denote the time step of these discretised Markov chains. Let's assume that $\Delta t$ divides both $u$ and $v$.
+% Now define $U = \frac{u}{\Delta t}$ and $V = \frac{v}{\Delta t}$.
+
+% Now the system behaviour over time may be described multiplying these matrices together. Therefore the system behaviour at time step $t$ will be:
+
+% \begin{align*}
+% P^t \text{ if } t \leq U\\
+% P^U P'^{t-U} \text{ if } U < t \leq V\\
+% P^{t - V} P'^V \text{ if } V < t \leq 2U\\
+% P^{2U} P'^{t-2U} \text{ if } 2U < t \leq 2V\\
+% P^{t - 2V} P'^{2V} \text{ if } 2V < t \leq 3V\\
+% \dots
+% \end{align*}
+
+% The median time to deadlock is the time $t$ that yields a $\mathbb{P}\left[ \text{deadlock} \right] = 0.5$. There may be a way of finding the mean time to deadlock too.
+
+
+
+% \section{Finding a Relationship Between $\omega$ and $\bar{\omega}$}\label{sec:relationship}
+
+% I think this will be difficult! There may not even be a relationship. But I'm jotting down some initial thoughts:
+
+% Consider $\alpha$, the average number of times a server went off duty before deadlock occurred. Then:
+
+% \begin{align*}
+% 	\alpha (u + v) &= \bar{\omega}\\
+% 	\alpha &= \frac{\bar{\omega}}{u + v}
+% \end{align*}
+
+% One idea about the relationship could be:
+
+% \begin{equation}\label{eqn:guess}
+% 	\bar{\omega} = \omega + \alpha \left( v - \frac{1}{\mu} - f(\Lambda) \right)
+% \end{equation}
+
+% where $f(\Lambda)$ represents the effect of arrivals during the off-duty periods, where a server could return from duty closer to deadlock than when he went off duty as there are more customers in the queue. Substituting in $\alpha = \frac{\bar{\omega}}{u + v}$ and rearranging we get:
+
+% \begin{equation*}
+% 	\bar{\omega} = \frac{(u + v)\omega}{u + \frac{1}{\mu} - f(\Lambda)}
+% \end{equation*}
+
+% By trying out different forms of $f(\Lambda)$, we could attempt to verify this using regression models. Of course Equation~\ref{eqn:guess} is an initial crude guess, we should discuss and brainstorm better ideas for this.
+
+\end{document}
