@@ -43,7 +43,15 @@ This chapter contains collaborative work done jointly by Cindy Huang, Dr. Vincen
 
 \section{Baulking}
 
-Baulking behaviour is when customers arrive, but choose not to join the queue as the queue is too long. This decision to baulk however is probabilistic. This work looks investigates a model of baulking discussed in \cite{anckergafarian63}, in which arriving customers baulk with probability $b(x)$ dependent on $x$ the number of customers already at the node. This probability density function is shown in Equation~\ref{eqn:probbaulking}.
+Baulking behaviour is when customers arrive, but choose not to join the queue as
+the queue is too long. This decision to baulk however is probabilistic. This
+% Can you add more about the basis of this, so something like:
+% As is the case in a lot of the literature cite{x, y, z, ...}, the baulking
+% decision is probabilistic.
+work looks investigates a model of baulking discussed in
+\cite{anckergafarian63}, in which arriving customers baulk with probability
+$b(x)$ dependent on $x$ the number of customers already at the node. This
+probability density function is shown in Equation~\ref{eqn:probbaulking}.
 
 \begin{equation}\label{eqn:probbaulking}
     b(x) = \left\{ \begin{array}{rr}
@@ -52,7 +60,9 @@ Baulking behaviour is when customers arrive, but choose not to join the queue as
     \end{array} \right.
 \end{equation}
 
-where $n$ is the number of customers already at the node, and $0 < \beta \leq 1$ is some measure of willingness to join the queue. Figure~\ref{fig:examplebaulkingfunctions} shows how the baulking function $b(x)$ behaves for different values of $x$ and $\beta$. The more customers there are at the node already, the more likely a newly arriving customer is to baulk. The higher the value for $\beta$ the less likely a newly arriving customer is to baulk, or the more willing they are to join the queue despite there being customer ahead of them. This justifies the interpretation of $\beta$ being a measure of willingness to join the queue.
+where $n$ is the number of customers already at the node, and $0 < \beta \leq 1$ is some measure of willingness to join the queue. Figure~\ref{fig:examplebaulkingfunctions} shows how the baulking function $b(x)$ behaves for different values of $x$ and $\beta$.
+% Can we change x to m
+The more customers there are at the node already, the more likely a newly arriving customer is to baulk. The higher the value for $\beta$ the less likely a newly arriving customer is to baulk, or the more willing they are to join the queue despite there being customer ahead of them.
 
 \begin{figure}
     \begin{center}
@@ -76,12 +86,15 @@ Customers arrive to the system at a rate $\Lambda$, but baulk with probability $
     \label{fig:onenodenetwork_baulking}
 \end{figure}
 
+% This state space comes a bit out of nowhere: The state space for the
+% corresponding Markov chain is given by:
 The state space is given by:
         \[S = \{i\in\mathbb{N} \nonscript\; | \nonscript\; 0 \leq i \leq n + 1
         \}\cup\{(-1)\}\]
 where \(i\) denotes the number of individuals in service or waiting, and $(-1)$ denotes the deadlocked state.
 
-Define $\delta = i_2 - i_1$ for all $i_k \geq 0$. The transitions are given by Equations~\ref{eqn:1nssAb}, \ref{eqn:1nssBb} and \ref{eqn:1nssCb}.
+Define $\delta = i_2 - i_1$ for all $i_k \geq 0,\; k\in{1, 2}$.
+The transitions are given by Equations~\ref{eqn:1nssAb}, \ref{eqn:1nssBb} and \ref{eqn:1nssCb}.
 
 \begin{equation}\label{eqn:1nssAb}
   q_{i_1, i_2} = \left\{
@@ -123,7 +136,9 @@ The only difference between this Markov model and the model presented in Chapter
 Note that for any $0 < \beta \leq 1$, and for any number of customers $x$, there is always a positive probability of a customer joining the queue, and therefore it is always possible to reach the deadlock state. If however $\beta = 0$ was chosen, then the only possibility of a customer joining the queue is when $x = 0$, and so the system will never reach deadlock.
 
 Figure~\ref{fig:varybeta} shows the effect of varying the baulking parameter $\beta$ on times to deadlock. Base parameters of $\Lambda = 3$, $n = 2$, $\mu = 3$, and $r_{11} = 0.6$ are used.
-The behaviour observed here is intuitive, as $\beta$ increases the time to deadlock decreases. Interpreting $\beta$ as the willingness of newly arriving customers to join the queue, then as this parameter increases more newly arriving customers join the queue, and so the queueing capacity fills up quicker. The baulking parameter $\beta$ therefore has a very similar effect on the time to deadlock as the arrival rate $\Lambda$.
+The behaviour observed here is intuitive, as $\beta$ increases, the time to deadlock decreases. Interpreting $\beta$ as the willingness of newly arriving customers to join the queue, then as this parameter increases more newly arriving customers join the queue, and so the queueing capacity fills up quicker. The baulking parameter $\beta$ therefore has a very similar effect on the time to deadlock as the arrival rate $\Lambda$.
+% I think the above paragraph could be broken up in to smaller sentences.
+% The rate at which the occupancy increases, increases.
 
 \begin{figure}
     \begin{center}
@@ -175,6 +190,7 @@ Combining these parameters results in an amplified effect.
 
 Figures~\ref{fig:varynbybeta} and \ref{fig:varybetabyn} show the effects that the baulking parameter $\beta$ has on the time to deadlock as the queueing capacity $n$ varies, and also how this effect is affected by the queueing capacity.
 In Chapter~\ref{chp:markovmodelsofdeadlock} it was shown that, without baulking, as the queueing capacity increased the time to deadlock also increased, as it took longer to fill up a larger queueing capacity. This effect is also seen with baulking, however the baulking exaggerates this effect; the lower the baulking parameter $\beta$ (that is, the more likely customers are to baulk) the more exaggerated this effect. This is because the baulking function $b(x)$ is independent of $n$, and even when customers are most willing to join the queue ($\beta = 1.0$) once there are $4$ customers in the system three-quarters of arriving customers baulk. Therefore increasing $n$ makes it less and less likely for a customer to join the queue, and so more and more difficult to fill up the queue, especially when the number of customers already at the queue approaches the queueing capacity.
+% Don't talk about filling up capacity. Talk about increasing occupancy.
 
 
 \begin{figure}
@@ -217,7 +233,10 @@ Looking at the inverse plot, the effect that the service rate $\mu$ has on the t
 \end{figure}
 
 Figure~\ref{fig:betathreshold} shows the effect of the baulking parameter $\beta$ on the service rate threshold.
-As the baulking parameter is closely associated with the arrival rate $\Lambda$, similarly to the effect of $\Lambda$ on $\hat{\mu}$, the threshold increases as the baulking parameter increases. This is due to A high baulking parameter means that more customers join the queue, and so it takes a larger service rate to escape the saturated zone. This relationship is not linear, and becomes less linear as the queueing capacity $n$ decreases.
+As the baulking parameter is closely associated with the arrival rate $\Lambda$,
+similarly to the effect of $\Lambda$ on $\hat{\mu}$, the threshold increases as
+the baulking parameter increases. This is due to a high baulking parameter means that more customers join the queue, and so it takes a larger service rate to escape the saturated zone. This relationship is not linear, and becomes less linear as the queueing capacity $n$ decreases.
+% Less linear is not very rigorous. Convexity increases perhaps.
 
 \begin{figure}[!htbp]
   \begin{center}
@@ -231,13 +250,20 @@ As the baulking parameter is closely associated with the arrival rate $\Lambda$,
 
 \section{Scheduled Vacations}
 
+% Add some literature here.
 This section will extend the Markov chain model of a one node restricted queueing network discussed in Chapter~\ref{chp:markovmodelsofdeadlock}, so that server behaviour may be incorporated.
 The behaviour we will focus on is scheduled vacations.
 That is, the server will periodically cycle on and off duty. While the server is on duty the system behaves as usual, however when the server is off duty no services can occur, although arrivals happen as usual. When a server goes off duty, the current service is interrupted, and resumed when the server comes back on duty.
 
-Let’s call $s$ the time on duty, and $s_v$ the time on vacation. Therefore the cycle length is $s + s_v$.
+Let us call $s$ the time on duty, and $s_v$ the time on vacation. Therefore the cycle length is $s + s_v$.
+% A picture would be nice here
 
-As an example, imagine an on-line shop where orders can arrive to a queue at any time of the day or night. The shop hires one server who processes orders from 9am to 5pm, seven days a week. From 5pm to 9am next day, that server is off duty and no orders can be processed, however orders continue to arrive. That server is on a scheduled vacation. (Note: if the server is mid way through processing an order at 5pm, then he will complete that service before going off duty). Here $s$ is the time on duty (9am - 5pm), and $s_v$ the time on vacation (5pm - 9am). The cycle length is one day.
+As an example, imagine an on-line shop where orders can arrive to a queue at any
+time of the day or night. The shop hires one server who processes orders from
+9am to 5pm, seven days a week. From 5pm to 9am next day, that server is off duty
+and no orders can be processed, however orders continue to arrive. That server
+is on a scheduled vacation. (Note: if the server is mid way through processing
+an order at 5pm, then they will complete that service before going off duty). Here $s$ is the time on duty (9am - 5pm), and $s_v$ the time on vacation (5pm - 9am). The cycle length is one day.
 
 This will be modelled using time inhomogeneous Markov chains. Before we begin, a result on discretising time inhomogeneous Markov chains is required.
 
@@ -251,7 +277,9 @@ A well known result \cite{stewart09} on discretising continuous Markov chains is
 
 This discrete Markov chain $P$ is equivalent to the continuous Markov chain $Q$ with transitions only occurring a at the discrete time interval $\Delta t$.
 
-It is also known that if a time inhomogeneous Markov chain can be described my transition matrix $P_1$ at for the first time step, and transition matrix $P_2$ at the second time step, where $P_1$ and $P_2$ have the same states and same time steps, then that system's state can be described by the transition matrix $P_1 P_2$ for the first two times steps. This is equivalent to a time homogeneous Markov chain described by $P$, can be described by $P^n$ for the first $n$ time steps.
+It is also known that if a time inhomogeneous Markov chain can be described by a transition matrix $P_1$ for the first time step, and transition matrix $P_2$ at the second time step, where $P_1$ and $P_2$ have the same states and same time steps, then that system's state can be described by the transition matrix $P_1 P_2$ for the first two times steps. This is equivalent to a time homogeneous Markov chain described by $P$, can be described by $P^n$ for the first $n$ time steps.
+% A matrix does not have steps. I don't understand that part (same states and
+% time steps)
 
 How about a continuous time inhomogeneous Markov chain that is described by $Q_1$ for the first $s_1$ time units, and by $Q_2$ for the next $s_2$ time units? How can we discretise these in order to obtain transient solutions to this discretised time inhomogeneous Markov chain? Theorem~\ref{thrm:discretisetimeinhomogeneousmarkovchains} discusses this discretisation.
 \newline
@@ -273,23 +301,29 @@ $\Delta t$ must be chosen such that each continuous transition matrix is discret
 First we require that $Q_j \Delta t + I$ is a stochastic matrix for each $j \in J$. In order for this to be true, we must have
 
 \begin{equation*}
-\Delta t \leq \frac{1}{\max_j |q_{ii}|} \forall j \in J
+\Delta t \leq \frac{1}{\max_j |q_{ii}|} \forall\; j \in J
+% Pet hate of mine: always need space after the forall. Find all of these.
 \end{equation*}
 
-where $q_ii$ are the diagonal entries of $Q_j$. Defining $\bar{\delta}_j = \frac{1}{\max_j |q_{ii}|} \forall j \in J$, we have that
+where $q_{ii}$ are the diagonal entries of $Q_j$. Defining $\bar{\delta}_j = \frac{1}{\max_j |q_{ii}|} \forall j \in J$, we have that
 
 \begin{equation}\label{eqn:cond1}
 \Delta t \leq \min_j \bar{\delta}_j
 \end{equation}.
 
-Now $\Delta t \in \mathbb{R}$, but as we require that $\Delta t$ can be multiplied by integers to give each of $s_j$ for $j \in J$, then we force $\Delta t \in \mathbb{Q}$. Therefore $\exists k, m \in \mathbb{Z}$ such that $k \Delta t = m$.
-Now we have an integer $m$ that must divide each $s_j$ for $j \in J$. For efficiency, we take the largest such $m$, and so $m = \gcd_j (s_j)$. Therefore, we have $\Delta t$ of form
+Now $\Delta t \in \mathbb{R}$, but as we require that $\Delta t$ can be
+multiplied by integers to give each of $s_j$ for $j \in J$, then we force
+$\Delta t \in \mathbb{Q}$. Therefore $\exists\; k, m \in \mathbb{Z}$ such that $k \Delta t = m$.
+% Same comment as forall
+Now we have an integer $m$ that must divide each $s_j$ for $j \in J$. For
+computational efficiency, we take the largest such $m$, and so $m = \gcd_j (s_j)$. Therefore, we have $\Delta t$ of form
 
 \begin{equation}\label{eqn:cond2}
 \Delta t = \frac{\gcd_j(s_j)}{k}
 \end{equation}.
 
-Combining the conditions in Equations~\ref{eqn:cond1} and \ref{eqn:cond2}, we get $k$ such that
+combining the conditions (~\ref{eqn:cond1}) and (~\ref{eqn:cond2}), we get $k$ such that
+% I notice you use Equation throughout. I would change to use (x).
 
 \begin{equation*}
 \frac{\gcd_j(s_j)}{k} \leq \min_j(\bar{\delta}_j)
@@ -312,7 +346,7 @@ Finally, substituting in for $k$, we get
 Consider the one node restricted queueing network shown in Figure~\ref{fig:1nodescheduledvacations}.
 Here customers arrive at a rate of $\Lambda$ per time unit, there is only enough room for $n$ customers to queue at a time, and after service customers rejoin the queue with probability $r_{11}$. The service rate now alternates between having $s$ time units as $\mu$, and $s_v$ time units as $0$. If a customer is in service as the service rate changes, their service is interrupted, and is resumed once the server come back on duty after $s_v$ time units on vacation.
 
-\begin{figure}
+\begin{figure}[!hbtp]
     \begin{center}
         \includestandalone[width=\textwidth]{img/1nodeexample_scheduledvacations}
     \end{center}
@@ -394,6 +428,7 @@ As we know the structure of these Markov chains, we can simplify the theorem for
 \newline
 
 \begin{proposition}
+    % This is still a theorem.
 For the one node restricted network described above, described by continuous transition matrices $Q$ for $s$ time units and $Q_v$ for $s_v$ time units, the appropriate time step to discretise the transition matrices is $\Delta t = \gcd(s, s_v) / \left\lceil \gcd(s, s_v) \left(\Lambda + (1 + r_{11}\mu\right) \right\rceil$.
 \end{proposition}
 
@@ -430,6 +465,12 @@ Where $\hat{P}$ is defined by Equation~\ref{eqn:transientSVsolutions2}.
 
 In this way the probability density function, and the cumulative density function over the time steps can be found.
 Figures~\ref{fig:pdfinitial} and \ref{fig:cdfinitial} show the PDF and CDF respectively of the system with parameters $\Lambda = 2.0$, $\mu = 4.0$, $n = 6$, $r_{11} = 0.2$, $s = 10$, $s_v = 5$. In the time periods where the server is on vacation, no customer can finish service, and so deadlock cannot be reached. Therefore the probability of reaching deadlock during these periods is $0$. This is observed in the PDF where the probabilities drop to $0$, and in the CDF where the cumulative probability does not increase for the duration of the vacation, at each vacation. During this vacation time, arrivals occur, but no customer leaves the queue, and so by the end of the vacation time the queue has had chance to fill up, but not empty. Therefore, immediately after a vacation period ends, the probability of deadlock shoots up as the queue will likely be in a fuller state than at the beginning of the vacation. At this point, the server returns, and so the queue begins to empty, and so the probability of deadlock decreases (although not to $0$, as the server can now send customers to rejoin the queue and cause deadlock). This results in the curved step-wise shape in the CDF, and oscillatory behaviour in the PDF that is observed.
+% Are the PDF and CDF calculator analytically? Include some details.
+% You can possibly include some pseudo code.
+% I don't know if in previous chapters you also do stuff where you step through
+% the chain until a certain number of probability is accounted for. If you do
+% you should obviously mention that algorithm once and then just refer back to
+% it.
 
 \begin{figure}
 \begin{center}
