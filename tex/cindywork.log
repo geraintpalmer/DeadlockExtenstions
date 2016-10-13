@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.10.29)  13 OCT 2016 11:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.10.29)  13 OCT 2016 13:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1070,80 +1070,84 @@ Underfull \hbox (badness 10000) in paragraph at lines 457--460
 
  []
 
-[10] [11] <img/pdf_initial.pdf, id=746, 433.62pt x 289.08pt>
+[10] [11] <img/pdf_initial.pdf, id=747, 433.62pt x 289.08pt>
 File: img/pdf_initial.pdf Graphic file (type pdf)
 
 <use img/pdf_initial.pdf>
-Package pdftex.def Info: img/pdf_initial.pdf used on input line 509.
+Package pdftex.def Info: img/pdf_initial.pdf used on input line 548.
 (pdftex.def)             Requested size: 211.38832pt x 140.92703pt.
- <img/cdf_initial.pdf, id=747, 433.62pt x 289.08pt>
+ <img/cdf_initial.pdf, id=748, 433.62pt x 289.08pt>
 File: img/cdf_initial.pdf Graphic file (type pdf)
 
 <use img/cdf_initial.pdf>
-Package pdftex.def Info: img/cdf_initial.pdf used on input line 514.
+Package pdftex.def Info: img/cdf_initial.pdf used on input line 553.
 (pdftex.def)             Requested size: 211.38832pt x 140.92703pt.
-
-<img/mc_sim_vary_n_scheduled_vacations.pdf, id=749, 578.16pt x 397.485pt>
+ [12]
+<img/mc_sim_vary_n_scheduled_vacations.pdf, id=759, 578.16pt x 397.485pt>
 File: img/mc_sim_vary_n_scheduled_vacations.pdf Graphic file (type pdf)
 
 <use img/mc_sim_vary_n_scheduled_vacations.pdf>
 Package pdftex.def Info: img/mc_sim_vary_n_scheduled_vacations.pdf used on inpu
-t line 528.
+t line 567.
 (pdftex.def)             Requested size: 328.82707pt x 226.0654pt.
- [12 <./img/pdf_initial.pdf> <./img/cdf_initial.pdf
+ [13 <./img/pdf_initial.pdf> <./img/cdf_initial.pdf
 
 pdfTeX warning: pdflatex (file ./img/cdf_initial.pdf): PDF inclusion: multiple 
 pdfs with page group included in a single page
+> <./img/mc_sim_vary_n_scheduled_vacations.pdf
+
+pdfTeX warning: pdflatex (file ./img/mc_sim_vary_n_scheduled_vacations.pdf): PD
+F inclusion: multiple pdfs with page group included in a single page
 >]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 540.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 579.
 
  (/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 540.
- [13 <./img/mc_sim_vary_n_scheduled_vacations.pdf>]
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 579.
+
 <img/cdf_vary_s.pdf, id=890, 433.62pt x 289.08pt>
 File: img/cdf_vary_s.pdf Graphic file (type pdf)
  <use img/cdf_vary_s.pdf>
-Package pdftex.def Info: img/cdf_vary_s.pdf used on input line 565.
+Package pdftex.def Info: img/cdf_vary_s.pdf used on input line 604.
 (pdftex.def)             Requested size: 211.38832pt x 140.92703pt.
 
 <img/ttd_vary_s.pdf, id=891, 433.62pt x 289.08pt>
 File: img/ttd_vary_s.pdf Graphic file (type pdf)
  <use img/ttd_vary_s.pdf>
-Package pdftex.def Info: img/ttd_vary_s.pdf used on input line 570.
+Package pdftex.def Info: img/ttd_vary_s.pdf used on input line 609.
 (pdftex.def)             Requested size: 211.38832pt x 140.92703pt.
 
 <img/cdf_vary_sv.pdf, id=892, 433.62pt x 289.08pt>
 File: img/cdf_vary_sv.pdf Graphic file (type pdf)
  <use img/cdf_vary_sv.pdf>
-Package pdftex.def Info: img/cdf_vary_sv.pdf used on input line 582.
+Package pdftex.def Info: img/cdf_vary_sv.pdf used on input line 621.
 (pdftex.def)             Requested size: 211.38832pt x 140.92703pt.
 
 <img/ttd_vary_sv.pdf, id=893, 433.62pt x 289.08pt>
 File: img/ttd_vary_sv.pdf Graphic file (type pdf)
  <use img/ttd_vary_sv.pdf>
-Package pdftex.def Info: img/ttd_vary_sv.pdf used on input line 587.
+Package pdftex.def Info: img/ttd_vary_sv.pdf used on input line 626.
 (pdftex.def)             Requested size: 211.38832pt x 140.92703pt.
 
 
 LaTeX Warning: Reference `chp:markovmodelsofdeadlock' on page 14 undefined on i
-nput line 599.
+nput line 638.
 
 <img/cdf_vary_n.pdf, id=896, 433.62pt x 289.08pt>
 File: img/cdf_vary_n.pdf Graphic file (type pdf)
  <use img/cdf_vary_n.pdf>
-Package pdftex.def Info: img/cdf_vary_n.pdf used on input line 604.
+Package pdftex.def Info: img/cdf_vary_n.pdf used on input line 643.
 (pdftex.def)             Requested size: 211.38832pt x 140.92703pt.
 
 <img/ttd_vary_n.pdf, id=897, 433.62pt x 289.08pt>
 File: img/ttd_vary_n.pdf Graphic file (type pdf)
  <use img/ttd_vary_n.pdf>
-Package pdftex.def Info: img/ttd_vary_n.pdf used on input line 609.
+Package pdftex.def Info: img/ttd_vary_n.pdf used on input line 648.
 (pdftex.def)             Requested size: 211.38832pt x 140.92703pt.
 
-[14 <./img/cdf_vary_s.pdf> <./img/ttd_vary_s.pdf
+[14] [15 <./img/cdf_vary_s.pdf> <./img/ttd_vary_s.pdf
 
 pdfTeX warning: pdflatex (file ./img/ttd_vary_s.pdf): PDF inclusion: multiple p
 dfs with page group included in a single page
@@ -1155,56 +1159,62 @@ pdfs with page group included in a single page
 
 pdfTeX warning: pdflatex (file ./img/ttd_vary_sv.pdf): PDF inclusion: multiple 
 pdfs with page group included in a single page
->] <img/cdf_vary_mu.pdf, id=1087, 433.62pt x 289.08pt>
-File: img/cdf_vary_mu.pdf Graphic file (type pdf)
+> <./img/cdf_vary_n.pdf
 
-<use img/cdf_vary_mu.pdf>
-Package pdftex.def Info: img/cdf_vary_mu.pdf used on input line 628.
-(pdftex.def)             Requested size: 211.38832pt x 140.92703pt.
- <img/ttd_vary_mu.pdf, id=1088, 433.62pt x 289.08pt>
-File: img/ttd_vary_mu.pdf Graphic file (type pdf)
-
-<use img/ttd_vary_mu.pdf>
-Package pdftex.def Info: img/ttd_vary_mu.pdf used on input line 633.
-(pdftex.def)             Requested size: 211.38832pt x 140.92703pt.
- [15 <./img/cdf_vary_n.pdf> <./img/ttd_vary_n.pdf
+pdfTeX warning: pdflatex (file ./img/cdf_vary_n.pdf): PDF inclusion: multiple p
+dfs with page group included in a single page
+> <./img/ttd_vary_n.pdf
 
 pdfTeX warning: pdflatex (file ./img/ttd_vary_n.pdf): PDF inclusion: multiple p
 dfs with page group included in a single page
-> <./img/cdf_vary_mu.pdf
+>] <img/cdf_vary_mu.pdf, id=1181, 433.62pt x 289.08pt>
+File: img/cdf_vary_mu.pdf Graphic file (type pdf)
 
-pdfTeX warning: pdflatex (file ./img/cdf_vary_mu.pdf): PDF inclusion: multiple 
-pdfs with page group included in a single page
-> <./img/ttd_vary_mu.pdf
+<use img/cdf_vary_mu.pdf>
+Package pdftex.def Info: img/cdf_vary_mu.pdf used on input line 667.
+(pdftex.def)             Requested size: 211.38832pt x 140.92703pt.
+ <img/ttd_vary_mu.pdf, id=1182, 433.62pt x 289.08pt>
+File: img/ttd_vary_mu.pdf Graphic file (type pdf)
 
-pdfTeX warning: pdflatex (file ./img/ttd_vary_mu.pdf): PDF inclusion: multiple 
-pdfs with page group included in a single page
->] <img/cdf_vary_L.pdf, id=1280, 433.62pt x 289.08pt>
+<use img/ttd_vary_mu.pdf>
+Package pdftex.def Info: img/ttd_vary_mu.pdf used on input line 672.
+(pdftex.def)             Requested size: 211.38832pt x 140.92703pt.
+ <img/cdf_vary_L.pdf, id=1187, 433.62pt x 289.08pt>
 File: img/cdf_vary_L.pdf Graphic file (type pdf)
- <use img/cdf_vary_L.pdf>
-Package pdftex.def Info: img/cdf_vary_L.pdf used on input line 651.
-(pdftex.def)             Requested size: 211.38832pt x 140.92703pt.
 
-<img/ttd_vary_L.pdf, id=1281, 433.62pt x 289.08pt>
+<use img/cdf_vary_L.pdf>
+Package pdftex.def Info: img/cdf_vary_L.pdf used on input line 690.
+(pdftex.def)             Requested size: 211.38832pt x 140.92703pt.
+ <img/ttd_vary_L.pdf, id=1188, 433.62pt x 289.08pt>
 File: img/ttd_vary_L.pdf Graphic file (type pdf)
- <use img/ttd_vary_L.pdf>
-Package pdftex.def Info: img/ttd_vary_L.pdf used on input line 656.
-(pdftex.def)             Requested size: 211.38832pt x 140.92703pt.
 
-<img/cdf_vary_r11.pdf, id=1282, 433.62pt x 289.08pt>
+<use img/ttd_vary_L.pdf>
+Package pdftex.def Info: img/ttd_vary_L.pdf used on input line 695.
+(pdftex.def)             Requested size: 211.38832pt x 140.92703pt.
+ <img/cdf_vary_r11.pdf, id=1189, 433.62pt x 289.08pt>
 File: img/cdf_vary_r11.pdf Graphic file (type pdf)
 
 <use img/cdf_vary_r11.pdf>
-Package pdftex.def Info: img/cdf_vary_r11.pdf used on input line 669.
+Package pdftex.def Info: img/cdf_vary_r11.pdf used on input line 708.
 (pdftex.def)             Requested size: 211.38832pt x 140.92703pt.
 
-<img/ttd_vary_r11.pdf, id=1283, 433.62pt x 289.08pt>
+<img/ttd_vary_r11.pdf, id=1190, 433.62pt x 289.08pt>
 File: img/ttd_vary_r11.pdf Graphic file (type pdf)
 
 <use img/ttd_vary_r11.pdf>
-Package pdftex.def Info: img/ttd_vary_r11.pdf used on input line 674.
+Package pdftex.def Info: img/ttd_vary_r11.pdf used on input line 713.
 (pdftex.def)             Requested size: 211.38832pt x 140.92703pt.
- (./cindywork.bbl [16 <./img/cdf_vary_L.pdf> <./img/ttd_vary_L.pdf
+ (./cindywork.bbl
+Underfull \hbox (badness 3713) in paragraph at lines 9--12
+[]\OT1/cmr/m/n/10 Nuffield Foun-da-tion.  Nuffield re-search place-ments.  []$\
+OT1/cmtt/m/n/10 http : / / www . nuffieldfoundation . org /
+ []
+
+) [16 <./img/cdf_vary_mu.pdf> <./img/ttd_vary_mu.pdf
+
+pdfTeX warning: pdflatex (file ./img/ttd_vary_mu.pdf): PDF inclusion: multiple 
+pdfs with page group included in a single page
+>] [17 <./img/cdf_vary_L.pdf> <./img/ttd_vary_L.pdf
 
 pdfTeX warning: pdflatex (file ./img/ttd_vary_L.pdf): PDF inclusion: multiple p
 dfs with page group included in a single page
@@ -1217,30 +1227,24 @@ pdfTeX warning: pdflatex (file ./img/cdf_vary_r11.pdf): PDF inclusion: multiple
 pdfTeX warning: pdflatex (file ./img/ttd_vary_r11.pdf): PDF inclusion: multiple
  pdfs with page group included in a single page
 >]
-Underfull \hbox (badness 3713) in paragraph at lines 9--12
-[]\OT1/cmr/m/n/10 Nuffield Foun-da-tion.  Nuffield re-search place-ments.  []$\
-OT1/cmtt/m/n/10 http : / / www . nuffieldfoundation . org /
- []
-
-) [17]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 686.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 686.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 725.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 725.
  (./cindywork.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 686.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 686.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 725.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 725.
 Package rerunfilecheck Info: File `cindywork.out' has not changed.
 (rerunfilecheck)             Checksum: A3BE620B71497EE839AD0FF31C02A429;561.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 686.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 725.
  ) 
 Here is how much of TeX's memory you used:
- 21906 strings out of 493117
- 422221 string characters out of 6135432
- 507274 words of memory out of 5000000
- 24810 multiletter control sequences out of 15000+600000
+ 21915 strings out of 493117
+ 422322 string characters out of 6135432
+ 507353 words of memory out of 5000000
+ 24816 multiletter control sequences out of 15000+600000
  20051 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,16n,96p,434b,1285s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1269,10 +1273,10 @@ t/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2014/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2014/texmf-dist/f
 onts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2014/texmf-dist/fo
 nts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on cindywork.pdf (17 pages, 736401 bytes).
+Output written on cindywork.pdf (17 pages, 742306 bytes).
 PDF statistics:
- 1581 PDF objects out of 1728 (max. 8388607)
- 582 compressed objects within 6 object streams
- 65 named destinations out of 1000 (max. 500000)
+ 1585 PDF objects out of 1728 (max. 8388607)
+ 586 compressed objects within 6 object streams
+ 68 named destinations out of 1000 (max. 500000)
  205 words of extra memory for PDF output out of 10000 (max. 10000000)
 

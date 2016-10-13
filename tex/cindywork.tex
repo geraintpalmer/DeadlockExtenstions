@@ -494,6 +494,45 @@ Where $\hat{P}$ is defined by Equation~\ref{eqn:transientSVsolutions2}.
 \end{equation}
 
 In this way the probability density function, and the cumulative density function over the time steps can be found.
+A stepping through methods was used, described in Algorithm~\ref{alg:findcdfSV} to find the entire CDF up to some tolerance $\epsilon$.
+
+\begin{algorithm}[!hbtp]
+\DontPrintSemicolon
+\SetKwInOut{Input}{input}
+\SetKwInOut{Output}{output}
+
+\Input{$P$, $P_v$, $s$, $s_v$, $\Delta t$, $\epsilon$.}
+\Output{A cumulative density function of reaching deadlock from an empty system.}
+\BlankLine
+
+$t, p = 0, 0$\;
+$\hat{P}$ = $P$\;
+$T_{Steps}, CDF = [0, \Delta t], [0, \hat{P}_{0, -1}]$\;
+\While{$p < 1 - \epsilon$}{
+  $p = \hat{P}_{0, -1}$\;
+  Append $p$ to $CDF$\;
+  Append $t$ to $T_{Steps}$\;
+  $t \leftarrow t + \Delta t$\;
+  \If{$t \bmod (s + s_v) \leq s$}{
+    $\hat{P} \leftarrow \hat{P} P$\;
+  }
+  \Else{
+    $\hat{P} \leftarrow \hat{P} P_v$\;
+  }
+  $p = \hat{P}_{0, -1}$\;
+  Append $p$ to $CDF$\;
+  Append $t$ to $T_{Steps}$\;
+}
+$CDF \leftarrow \frac{1}{p}CDF$\;
+\BlankLine
+
+\KwRet $CDF$, $T_{Steps}$
+\caption{A stepping through method to find the CDF of a system with scheduled vacations.}
+\label{alg:findcdfSV}
+\end{algorithm}
+
+
+
 Figures~\ref{fig:pdfinitial} and \ref{fig:cdfinitial} show the PDF and CDF respectively of the system with parameters $\Lambda = 2.0$, $\mu = 4.0$, $n = 6$, $r_{11} = 0.2$, $s = 10$, $s_v = 5$.
 In the time periods where the server is on vacation, no customer can finish service, and so deadlock cannot be reached.
 Therefore the probability of reaching deadlock during these periods is $0$.
