@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex cindywork"] 1476362946 "cindywork.aux" "cindywork.bbl" "cindywork" 1476363645
+["bibtex cindywork"] 1476364279 "cindywork.aux" "cindywork.bbl" "cindywork" 1476364282
   "/usr/local/texlive/2014/texmf-dist/bibtex/bst/base/plain.bst" 1292289607 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "cindywork.aux" 1476363112 17194 5d0f4a7f6febb1c4f4f63e34a8c42f9e ""
+  "cindywork.aux" 1476364281 17194 500b3e57d6561e2c9862c446416d0bb0 ""
   "cindywork.bcf" 0 -1 0 ""
   "refs.bib" 1472825304 640 496fd60d3f5d4baeebb20a3b67737f6e ""
   (generated)
   "cindywork.blg"
   "cindywork.bbl"
-["pdflatex"] 1476363110 "cindywork.tex" "cindywork.pdf" "cindywork" 1476363645
+["pdflatex"] 1476364279 "cindywork.tex" "cindywork.pdf" "cindywork" 1476364282
   "/usr/local/texlive/2014/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2014/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "/usr/local/texlive/2014/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy7.tfm" 1246382020 1120 7f9f170e8aa57527ad6c49feafd45d54 ""
@@ -225,10 +225,10 @@
   "/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1401025944 1445653 26a0aacf3d70032b1ec192e8c7792117 ""
   "/usr/local/texlive/2014/texmf-var/web2c/pdftex/pdflatex.fmt" 1414590311 3832013 ba839515da145455425ba68e9db51e84 ""
   "/usr/local/texlive/2014/texmf.cnf" 1401025936 577 a59edbde8d3a8c549d0eeaab1739e2ff ""
-  "cindywork.aux" 1476363112 17194 5d0f4a7f6febb1c4f4f63e34a8c42f9e ""
-  "cindywork.bbl" 1476362947 553 2c7a615a5cb50ee9dd5a753be97f6b66 "bibtex cindywork"
-  "cindywork.out" 1476363112 561 a3be620b71497ee839ad0ff31c02a429 ""
-  "cindywork.tex" 1476363640 38577 562225c21aee8f22be37e0df18d91458 ""
+  "cindywork.aux" 1476364281 17194 500b3e57d6561e2c9862c446416d0bb0 ""
+  "cindywork.bbl" 1476364279 553 2c7a615a5cb50ee9dd5a753be97f6b66 "bibtex cindywork"
+  "cindywork.out" 1476364281 561 a3be620b71497ee839ad0ff31c02a429 ""
+  "cindywork.tex" 1476364272 38577 95444a5301aece9a501fbadb4f0aff5e ""
   "img/1nodeexample_baulking.tex" 1476269225 992 aa188a9591e949c73b1fa8b8c13bf0ed ""
   "img/1nodeexample_scheduledvacations.tex" 1472831589 852 b73381163d6cbf3c35b370eb7f25da01 ""
   "img/cdf_initial.pdf" 1475843103 16117 8c2f1b112f0dbd8dbddc2887e9edf687 ""
@@ -238,7 +238,7 @@
   "img/cdf_vary_r11.pdf" 1475842469 23529 91a7ae26f5a57f699c1cbdaee1c7962e ""
   "img/cdf_vary_s.pdf" 1475840877 26872 023a49a306e641f46282e6702a36019d ""
   "img/cdf_vary_sv.pdf" 1475841278 26453 c83db30df41c75663303b0b1076af714 ""
-  "img/examplebaulking.pdf" 1472819788 23480 2113757d14183f97882082fb686761ac ""
+  "img/examplebaulking.pdf" 1476364139 23530 5dea33dd92ce3075babfee19146de619 ""
   "img/markov_chain_1node_SV_offduty.tex" 1475847021 1319 5ceda500e480956e3690632f6d74afd8 ""
   "img/markov_chain_1node_SV_onduty.tex" 1475847023 2263 978d4d7ffddbcd6fc9d2a3d72aeb1670 ""
   "img/markov_chain_1node_baulking.tex" 1475846044 2337 214b1335367a25a087f2595f1396c3cd ""
