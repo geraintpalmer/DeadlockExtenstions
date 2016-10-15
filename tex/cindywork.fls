@@ -403,6 +403,15 @@ INPUT img/markov_chain_1node_SV_onduty.tex
 INPUT img/markov_chain_1node_SV_offduty.tex
 INPUT img/markov_chain_1node_SV_offduty.tex
 INPUT img/markov_chain_1node_SV_offduty.tex
+INPUT img/method1method2_difftimestep.pdf
+INPUT ./img/method1method2_difftimestep.pdf
+INPUT ./img/method1method2_difftimestep.pdf
+INPUT img/method1method2_sametimestep.pdf
+INPUT ./img/method1method2_sametimestep.pdf
+INPUT ./img/method1method2_sametimestep.pdf
+INPUT img/method1method2_sametimestep_diffs.pdf
+INPUT ./img/method1method2_sametimestep_diffs.pdf
+INPUT ./img/method1method2_sametimestep_diffs.pdf
 INPUT img/pdf_initial.pdf
 INPUT ./img/pdf_initial.pdf
 INPUT ./img/pdf_initial.pdf

@@ -369,7 +369,7 @@ Finally, substituting in for $k$, we get
 
 
 
-\subsection{Modelling Deadlock with Servers with Scheduled Vacations}
+\subsection{Modelling Deadlock with Servers with Scheduled Vacations}\label{sec:modelscheduledvacations}
 
 Consider the one node restricted queueing network shown in Figure~\ref{fig:1nodescheduledvacations}.
 Here customers arrive at a rate of $\Lambda$ per time unit, there is only enough room for $n$ customers to queue at a time, and after service customers rejoin the queue with probability $r_{11}$.
@@ -451,14 +451,17 @@ These two cases are visualised in Figure~\ref{fig:scheduledvacationsMC}.
 \label{fig:scheduledvacationsMC}
 \end{figure}
 
+We will use two different methods for getting the CDF and expeced time to deadlock from these Markov models.
+Method 1, described in Section~\ref{sec:method1}, discretises the transition matrices, and Method 2, described in Section~\ref{sec:method2} uses matrix exponentials of the continuous transition matrices.
 
 
+\subsection{Method 1}\label{sec:method1}
 
-Using Theorem~\ref{thrm:discretisetimeinhomogeneousmarkovchains}, these can be discretised appropriately.
+Using Theorem~\ref{thrm:discretisetimeinhomogeneousmarkovchains}, the two transition matrices described in Section~\ref{sec:modelscheduledvacations} can be discretised appropriately.
 As we know the structure of these Markov chains, we can simplify the theorem for this purpose.
 \newline
 
-\begin{theorem}
+\begin{theorem}\label{thrm:discretisescheduledvacations}
 For the one node restricted network described above, described by continuous transition matrices $Q$ for $s$ time units and $Q_v$ for $s_v$ time units, the appropriate time step to discretise the transition matrices is $\Delta t = \gcd(s, s_v) / \left\lceil \gcd(s, s_v) \left(\Lambda + (1 + r_{11}\mu\right) \right\rceil$.
 \end{theorem}
 
@@ -509,9 +512,6 @@ $t, p = 0, 0$\;
 $\hat{P}$ = $P$\;
 $T_{Steps}, CDF = [0, \Delta t], [0, \hat{P}_{0, -1}]$\;
 \While{$p < 1 - \epsilon$}{
-  $p = \hat{P}_{0, -1}$\;
-  Append $p$ to $CDF$\;
-  Append $t$ to $T_{Steps}$\;
   $t \leftarrow t + \Delta t$\;
   \If{$t \bmod (s + s_v) \leq s$}{
     $\hat{P} \leftarrow \hat{P} P$\;
@@ -527,11 +527,108 @@ $CDF \leftarrow \frac{1}{p}CDF$\;
 \BlankLine
 
 \KwRet $CDF$, $T_{Steps}$
-\caption{A stepping through method to find the CDF of a system with scheduled vacations.}
+\caption{A stepping through method to find the CDF of a system with scheduled vacations; Method 1.}
 \label{alg:findcdfSV}
 \end{algorithm}
 
 
+\subsection{Method 2}\label{sec:method2}
+
+An alternative method of finding the state distributions at time $t$ is to use the following matrix exponential formula \cite{stewart09}:
+
+\begin{equation}
+P(t) = e^{Qt}
+\end{equation}
+
+Therefore $e^{Qt}$ accounts for all the probability of the system described by the continuous transition matrix $Q$ for $t$ time units.
+Transient solutions, and approximate stationary solutions for this system can be found using using Equation~\ref{eqn:transientSVsolutions3}.
+
+\begin{equation}\label{eqn:transientSVsolutions3}
+\pi_{t+u} = \pi_{t} e^{\hat{Q}u}
+\end{equation}
+
+Where $\hat{Q}$ is defined by Equation~\ref{eqn:transientSVsolutions4}.
+
+\begin{equation}\label{eqn:transientSVsolutions4}
+\hat{Q} = \left\{
+    \begin{array}{cc}
+    Q & \text{if } t \bmod (s + s_v) \leq s \\
+    Q_v & \text{if } t \bmod (s + s_v) > s
+    \end{array}\right.
+\end{equation}
+
+Now $e^{Qs}$ accounts for all the probability during the period where the server is on duty, and $e^{Q s_v}$ accounts for all the probability during the vacation period.
+Figure~\ref{fig:method1method2_difftimesteps} compares the transient solutions of both methods by plotting the CDF of reaching deadlock from an empty system.
+
+\begin{figure}[!hbtp]
+\begin{center}
+    \includegraphics[width=0.7\textwidth]{img/method1method2_difftimestep.pdf}
+    \caption{Comparing the CDF of the time to deadlock using Method 1 and Method 2.}
+    \label{fig:method1method2_difftimesteps}
+\end{center}
+\end{figure}
+
+At the points where the all probabilities were accounted for directly ($s$, $s_v$, $s + s_v$, $2s + s_v$, $\dots$) the solutions are similar.
+However, between these points this method is inaccurate.
+This is problematic as we require an accurate CDF in order to find the mean time to deadlock.
+In order to increase the number of points where the CDF is accurate, we adapt Algorithm~\ref{alg:findcdfSV1} to use Method 2.
+This new algorithm is shown in Algorithm~\ref{alg:findcdfSV2}
+
+
+\begin{algorithm}[!hbtp]
+\DontPrintSemicolon
+\SetKwInOut{Input}{input}
+\SetKwInOut{Output}{output}
+
+\Input{$Q$, $Q_v$, $s$, $s_v$, $\Delta t$, $\epsilon$.}
+\Output{A cumulative density function of reaching deadlock from an empty system.}
+\BlankLine
+
+$t, p = 0, 0$\;
+$\hat{Q}$ = $e^{Q 0}$\;
+$T_{Steps}, CDF = [0], [0]$\;
+\While{$p < 1 - \epsilon$}{
+  $t \leftarrow t + \Delta t$\;
+  \If{$t \bmod (s + s_v) \leq s$}{
+    $\hat{Q} \leftarrow \hat{Q} e^{Q \Delta t}$\;
+  }
+  \Else{
+    $\hat{Q} \leftarrow \hat{Q} e^{Q_v \Delta t}$\;
+  }
+  Append $\hat{Q}_{0, -1}$ to $CDF$\;
+  Append $t$ to $T_{Steps}$\;
+}
+$CDF \leftarrow \frac{1}{p}CDF$\;
+\BlankLine
+
+\KwRet $CDF$, $T_{Steps}$
+\caption{A stepping through method to find the CDF of a system with scheduled vacations; Method 2.}
+\label{alg:findcdfSV2}
+\end{algorithm}
+
+This adapted method, taking $\Delta t$ as that yielded by Theorem~\ref{thrm:discretisescheduledvacations}, ensures that the CDF is accurate for every multiple of $\Delta t$, that includes multiples of both $s$ and $s_v$, the times in which servers go on and off duty.
+Figure~\ref{fig:method1method2} compares the results of the algorithms for Method 1 and Method 2, both using $\Delta t$ as a time step.
+
+\begin{figure}[!hbtp]
+\begin{center}
+\begin{subfigure}[b]{0.45\textwidth}
+    \includegraphics[width=\textwidth]{img/method1method2_sametimestep.pdf}
+    \caption{Comparing the CDF of the time to deadlock using Method 1 and Method 2, same $\Delta t$.}
+    \label{fig:compare_method1method2}
+\end{subfigure}
+\begin{subfigure}[b]{0.45\textwidth}
+    \includegraphics[width=\textwidth]{img/method1method2_sametimestep_diffs.pdf}
+    \caption{Discrepencies between Method 1 and Method 2.}
+    \label{fig:diffs_method1method2}
+\end{subfigure}
+\end{center}
+\caption{Comparing the CDF of the time to deadlock using Method 1 and Method 2, same $\Delta t$, including discrepencies.}
+\label{fig:method1method2}
+\end{figure}
+
+
+
+\subsection{Results}
 
 Figures~\ref{fig:pdfinitial} and \ref{fig:cdfinitial} show the PDF and CDF respectively of the system with parameters $\Lambda = 2.0$, $\mu = 4.0$, $n = 6$, $r_{11} = 0.2$, $s = 10$, $s_v = 5$.
 In the time periods where the server is on vacation, no customer can finish service, and so deadlock cannot be reached.
