@@ -1,10 +1,11 @@
 \BOOKMARK [1][-]{section.1}{Introduction}{}% 1
 \BOOKMARK [1][-]{section.2}{Baulking}{}% 2
-\BOOKMARK [2][-]{subsection.2.1}{Markov Chain Model of One Node Queueing Network with Baulking}{section.2}% 3
-\BOOKMARK [1][-]{section.3}{Scheduled Vacations}{}% 4
-\BOOKMARK [2][-]{subsection.3.1}{Discretising Time Inhomogeneous Markov Chains}{section.3}% 5
-\BOOKMARK [2][-]{subsection.3.2}{Modelling Deadlock with Servers with Scheduled Vacations}{section.3}% 6
-\BOOKMARK [2][-]{subsection.3.3}{Method 1}{section.3}% 7
-\BOOKMARK [2][-]{subsection.3.4}{Method 2}{section.3}% 8
-\BOOKMARK [2][-]{subsection.3.5}{Results}{section.3}% 9
-\BOOKMARK [2][-]{subsection.3.6}{Effect of Parameters of The Time to Deadlock with Vacations}{section.3}% 10
+\BOOKMARK [2][-]{subsection.2.1}{Markov Chain Model of One Node Queueing Network Under b1\(m\) Baulking}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{Markov Chain Model of One Node Queueing Network Under b2\(m\) Baulking}{section.2}% 4
+\BOOKMARK [1][-]{section.3}{Scheduled Vacations}{}% 5
+\BOOKMARK [2][-]{subsection.3.1}{Discretising Time Inhomogeneous Markov Chains}{section.3}% 6
+\BOOKMARK [2][-]{subsection.3.2}{Modelling Deadlock with Servers with Scheduled Vacations}{section.3}% 7
+\BOOKMARK [2][-]{subsection.3.3}{Method 1}{section.3}% 8
+\BOOKMARK [2][-]{subsection.3.4}{Method 2}{section.3}% 9
+\BOOKMARK [2][-]{subsection.3.5}{Results}{section.3}% 10
+\BOOKMARK [2][-]{subsection.3.6}{Effect of Parameters of The Time to Deadlock with Vacations}{section.3}% 11
