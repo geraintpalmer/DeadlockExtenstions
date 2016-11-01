@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex cindywork"] 1478005595 "cindywork.aux" "cindywork.bbl" "cindywork" 1478005648
+["bibtex cindywork"] 1478008889 "cindywork.aux" "cindywork.bbl" "cindywork" 1478011597
   "/usr/local/texlive/2014/texmf-dist/bibtex/bst/base/plain.bst" 1292289607 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "cindywork.aux" 1478005647 23192 6c61fb795f2246c17d96938150b032c1 ""
+  "cindywork.aux" 1478011596 22980 c35046abf25ece93bff36f374d01e701 ""
   "cindywork.bcf" 0 -1 0 ""
   "refs.bib" 1477994093 916 d9e3373e368370b3b08be8d8be77f8ac ""
   (generated)
   "cindywork.blg"
   "cindywork.bbl"
-["pdflatex"] 1478005645 "cindywork.tex" "cindywork.pdf" "cindywork" 1478005648
+["pdflatex"] 1478011594 "cindywork.tex" "cindywork.pdf" "cindywork" 1478011597
   "/usr/local/texlive/2014/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2014/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy5.tfm" 1246382020 1120 1e8878807317373affa7f7bba4cf2f6a ""
   "/usr/local/texlive/2014/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy7.tfm" 1246382020 1120 7f9f170e8aa57527ad6c49feafd45d54 ""
@@ -226,10 +226,10 @@
   "/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1401025944 1445653 26a0aacf3d70032b1ec192e8c7792117 ""
   "/usr/local/texlive/2014/texmf-var/web2c/pdftex/pdflatex.fmt" 1414590311 3832013 ba839515da145455425ba68e9db51e84 ""
   "/usr/local/texlive/2014/texmf.cnf" 1401025936 577 a59edbde8d3a8c549d0eeaab1739e2ff ""
-  "cindywork.aux" 1478005647 23192 6c61fb795f2246c17d96938150b032c1 ""
-  "cindywork.bbl" 1478005596 738 e575eae39e8620630d6c2bb03f74e571 "bibtex cindywork"
-  "cindywork.out" 1478005647 861 9d435631532a6b6565d0602464ed3c1c ""
-  "cindywork.tex" 1478005640 48401 a74b92601ac760f9ff9934ed0dfcfd4a ""
+  "cindywork.aux" 1478011596 22980 c35046abf25ece93bff36f374d01e701 ""
+  "cindywork.bbl" 1478008889 738 e575eae39e8620630d6c2bb03f74e571 "bibtex cindywork"
+  "cindywork.out" 1478011596 791 300fd70e3a859107f639f5f3a7b86c40 ""
+  "cindywork.tex" 1478011589 48764 7f21efad124d0943cc2c106224c15270 ""
   "img/1nodeexample_baulking.tex" 1476269225 992 aa188a9591e949c73b1fa8b8c13bf0ed ""
   "img/1nodeexample_scheduledvacations.tex" 1472831589 852 b73381163d6cbf3c35b370eb7f25da01 ""
   "img/baulk1_varyL.pdf" 1477948175 19657 6af353e68907b9d7a628ba201b075c70 ""

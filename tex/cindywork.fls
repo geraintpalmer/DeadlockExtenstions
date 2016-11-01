@@ -319,6 +319,7 @@ INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
+INPUT /usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT img/examplebaulking1.pdf
 INPUT ./img/examplebaulking1.pdf
 INPUT ./img/examplebaulking1.pdf
@@ -332,7 +333,6 @@ INPUT img/examplebaulking2.pdf
 INPUT ./img/examplebaulking2.pdf
 INPUT ./img/examplebaulking2.pdf
 INPUT /usr/local/texlive/2014/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
-INPUT /usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT img/1nodeexample_baulking.tex
 INPUT img/1nodeexample_baulking.tex
 INPUT img/1nodeexample_baulking.tex

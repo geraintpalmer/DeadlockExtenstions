@@ -50,7 +50,7 @@ Baulking behaviour is when customers arrive, but choose not to join the queue as
 This decision to baulk however is probabilistic.
 This work investigates two models of baulking discussed in \cite{anckerjrgafarian63a} and \cite{anckerjrgafarian63b}.
 Here arriving customers baulk with probability $b(m)$ dependent on $m$ the number of customers already at the node.
-The two probability density functions we will consider are shown in Equation~\ref{eqn:probbaulking1} and \ref{eqn:probbaulking2}.
+The two probability density functions we will consider are shown in Equation~\ref{eqn:probbaulking1} and \ref{eqn:probbaulking2}, introduced in \cite{anckerjrgafarian63a} and \cite{anckerjrgafarian63b} respectively.
 
 \begin{equation}\label{eqn:probbaulking1}
     b_1(m) = \frac{m}{n+1}
@@ -66,9 +66,10 @@ The two probability density functions we will consider are shown in Equation~\re
 where $m$ is the number of customers already at the node.
 In Equation~\ref{eqn:probbaulking1}, $n$ denotes the queueing capacity, and in Equation~\ref{eqn:probbaulking2}, $0 < \beta \leq 1$ is some measure of willingness to join the queue.
 Figure~\ref{fig:examplebaulkingfunctions} shows how the baulking functions $b_1(m)$ and $b_2(m)$ behave for different values of $m$ and $\beta$.
+The function $b_1(m)$ is linear, and enforces maximum queue capacity of $n$; the function $b_2(m)$ is not linear, and does not enforce a maximum queue capacity itself.
 When discussing general baulking functions, we will drop the index and refer to $b(m)$.
 The more customers there are at the node already, the more likely a newly arriving customer is to baulk.
-The higher the value for $\beta$ the less likely a newly arriving customer is to baulk, or the more willing they are to join the queue despite there being customer ahead of them.
+For $b_2(m)$, the higher the value for $\beta$ the less likely a newly arriving customer is to baulk, or the more willing they are to join the queue despite there being customer ahead of them.
 This justifies the interpretation of $\beta$ being a measure of willingness to join the queue.
 
 \begin{figure}[!hbtp]
@@ -89,7 +90,7 @@ This justifies the interpretation of $\beta$ being a measure of willingness to j
 \end{figure}
 
 
-\subsection{Markov Chain Model of One Node Queueing Network Under $b_1(m)$ Baulking}
+\subsection{Markov Model Under $b_1(m)$ Baulking}
 
 Consider the one node queueing network shown in Figure~\ref{fig:onenodenetwork_baulking}.
 Customers arrive to the system at a rate $\Lambda$, but baulk with probability $1 - b(m)$ when there are $m$ customers already at the node, and so join the queue with probability $b(m)$.
@@ -111,9 +112,9 @@ The state space for the corresponding Markov chain is given by:
 where \(i\) denotes the number of individuals in service or waiting, and $(-1)$ denotes the deadlocked state.
 
 Define  $\delta = i_2 - i_1$ for all $i_k \geq 0,\; k \in \{1, 2\}$.
-The transitions are given by Equations~\ref{eqn:1nssAb}, \ref{eqn:1nssBb} and \ref{eqn:1nssCb}.
+The transitions are given by Equations~\ref{eqn:1nssAb1}, \ref{eqn:1nssBb1} and \ref{eqn:1nssCb1}.
 
-\begin{equation}\label{eqn:1nssAb}
+\begin{equation}\label{eqn:1nssAb1}
   q_{i_1, i_2} = \left\{
   \begin{array}{rr}
     \left. \begin{array}{rr}
@@ -125,7 +126,7 @@ The transitions are given by Equations~\ref{eqn:1nssAb}, \ref{eqn:1nssBb} and \r
   \end{array} \right.
 \end{equation}
 
-\begin{equation}\label{eqn:1nssBb}
+\begin{equation}\label{eqn:1nssBb1}
   q_{i, (-1)} = \left\{
   \begin{array}{rr}
     r_{11}\mu & \text{if } i = n + 1 \\
@@ -134,7 +135,7 @@ The transitions are given by Equations~\ref{eqn:1nssAb}, \ref{eqn:1nssBb} and \r
   \right.
 \end{equation}
 
-\begin{equation}\label{eqn:1nssCb}
+\begin{equation}\label{eqn:1nssCb1}
   q_{-1, i} = 0
 \end{equation}
 
@@ -168,9 +169,9 @@ Base parameters of $\Lambda = 3.0$, $\mu = 3.0$, $n = 5$, $r_{11} = 0.6$ were us
 It can be seen that under $b_1(m)$ baulking the system takes longer to reach deadlock.
 This is expected, baulking reduced the joining rate, and as the joining rate decreases, the rate at which occupancy increases decreases, and full occupancy is a requisite for blocking and deadlock.
 We can also observe that this effect is multiplicative, the longer the time to deadlock, the greater the effect that baulkig has on the time to deadlock.
-Although this isn't true for small values of $\mu$, below the service rate threshold $\hat{\mu}$: this is because below here we assume a saturated system, where between any two services the occupancy is full, and so deadlock is independent of the joining rate.
+Although this isn't true for small values of $\mu$, below the service rate threshold $\hat{\mu}$: this is because below here we assume a saturated system, where between any two services the occupancy fills, and so deadlock is independent of the joining rate.
 We can observe however, that the service rate threshold $\hat{\mu}$ is much lower for the system with baulking.
-This is intuitive, as we would require a larger average service time when customers baulk to ensure that the occupancy fills between services.
+This is intuitive, under baulking we would require a larger average service time to ensure that the occupancy fills between services.
 
 \begin{figure}[!hbtp]
 \begin{center}
@@ -202,7 +203,7 @@ This is intuitive, as we would require a larger average service time when custom
 
 
 
-\subsection{Markov Chain Model of One Node Queueing Network Under $b_2(m)$ Baulking}
+\subsection{Markov Model Under $b_2(m)$ Baulking}
 
 We will now consider the case under $b_2(m)$ baulking.
 The state space for the corresponding Markov chain is given by:
@@ -211,9 +212,9 @@ The state space for the corresponding Markov chain is given by:
 where \(i\) denotes the number of individuals in service or waiting, and $(-1)$ denotes the deadlocked state.
 
 Define  $\delta = i_2 - i_1$ for all $i_k \geq 0,\; k \in \{1, 2\}$.
-The transitions are given by Equations~\ref{eqn:1nssAb}, \ref{eqn:1nssBb} and \ref{eqn:1nssCb}.
+The transitions are given by Equations~\ref{eqn:1nssAb2}, \ref{eqn:1nssBb2} and \ref{eqn:1nssCb2}.
 
-\begin{equation}\label{eqn:1nssAb}
+\begin{equation}\label{eqn:1nssAb2}
   q_{i_1, i_2} = \left\{
   \begin{array}{rr}
     \left. \begin{array}{rr}
@@ -226,7 +227,7 @@ The transitions are given by Equations~\ref{eqn:1nssAb}, \ref{eqn:1nssBb} and \r
   \end{array} \right.
 \end{equation}
 
-\begin{equation}\label{eqn:1nssBb}
+\begin{equation}\label{eqn:1nssBb2}
   q_{i, (-1)} = \left\{
   \begin{array}{rr}
     r_{11}\mu & \text{if } i = n + 1 \\
@@ -235,7 +236,7 @@ The transitions are given by Equations~\ref{eqn:1nssAb}, \ref{eqn:1nssBb} and \r
   \right.
 \end{equation}
 
-\begin{equation}\label{eqn:1nssCb}
+\begin{equation}\label{eqn:1nssCb2}
   q_{-1, i} = 0
 \end{equation}
 
@@ -271,7 +272,7 @@ The baulking parameter $\beta$ therefore has a very similar effect on the time t
 Let's investigate the combined effect of $\beta$ along with other parameters on the time to deadlock.
 Figures~\ref{fig:varyLambdabybeta} and \ref{fig:varybetabyLambda} show the effects that the baulking parameter $\beta$ has on the time to deadlock as the arrival rate $\Lambda$ varies, and also how this effect is affected by the arrival rate.
 Figures~\ref{fig:varyr11bybeta} and \ref{fig:varybetabyr11} show the effects that the baulking parameter $\beta$ has on the time to deadlock as the transition probability $r_{11}$ varies, and also how this effect is affected by the transition probability.
-All three parameters, $\Lambda$, $r_{11}$, and $\beta$ have similar effects on the time to deadlock; as these parameters are increased, then the queueing capacity if filled up more quickly, and so we get to a situation where blocking, and deadlock, can occur sooner.
+All three parameters, $\Lambda$, $r_{11}$, and $\beta$ have similar effects on the time to deadlock; as these parameters are increased, then the queueing capacity is filled up more quickly, and so we get to a situation where blocking, and deadlock, can occur sooner.
 Therefore increasing these parameters decreases the time to deadlock.
 Combining these parameters results in an amplified effect.
 
@@ -310,9 +311,9 @@ Combining these parameters results in an amplified effect.
 \end{figure}
 
 Figures~\ref{fig:varynbybeta} and \ref{fig:varybetabyn} show the effects that the baulking parameter $\beta$ has on the time to deadlock as the queueing capacity $n$ varies, and also how this effect is affected by the queueing capacity.
-In Chapter~\ref{chp:markovmodelsofdeadlock} it was shown that, without baulking, as the queueing capacity increased the time to deadlock also increased, as it took longer to fill up a larger queueing capacity.
-This effect is also seen with baulking, however the baulking exaggerates this effect; the lower the baulking parameter $\beta$ (that is, the more likely customers are to baulk) the more exaggerated this effect.
-This is because the baulking function $b(m)$ is independent of $n$, and even when customers are most willing to join the queue ($\beta = 1.0$) once there are $4$ customers in the system three-quarters of arriving customers baulk.
+In Chapter~\ref{chp:markovmodelsofdeadlock} it was shown that for a system without baulking, as the queueing capacity increases the time to deadlock also increases, as it takes longer to fill up a larger queueing capacity.
+This effect is also seen under $b_2(m)$ baulking, however the baulking exaggerates this effect; the lower the baulking parameter $\beta$ (that is, the more likely customers are to baulk) the more exaggerated this effect.
+This is because the baulking function $b_2(m)$ is independent of $n$, and even when customers are most willing to join the queue ($\beta = 1.0$) once there are $4$ customers in the system three-quarters of arriving customers baulk.
 Therefore increasing $n$ makes it less and less likely for a customer to join the queue, and so more and more difficult for occupancy to increase, especially when the number of customers already at the queue approaches the queueing capacity.
 
 
@@ -334,16 +335,16 @@ Therefore increasing $n$ makes it less and less likely for a customer to join th
 \end{figure}
 
 Figures~\ref{fig:varymubybeta} and \ref{fig:varybetabymu} show the effects that the baulking parameter $\beta$ has on the time to deadlock as the service rate $\mu$ varies, and also how this effect is affected by the service rate.
-When looking at the equivalent system without baulking in Chapter~\ref{chp:markovmodelsofdeadlock} a bowl shaped curve was observed in the time to deadlock when varying the service rate, and the presence of some service rate threshold that changes the behaviour of $\omega$.
+When looking at the equivalent system without baulking in Chapter~\ref{chp:markovmodelsofdeadlock} a bowl shaped curve is observed in the time to deadlock when varying the service rate, and the presence of some service rate threshold $\hat{\mu}$ that changes the behaviour of $\omega$.
 This behaviour is still present when customers exhibit baulking, however the baulking parameter $\beta$ effects the shape of the curve. Note that only the gradient of the slope for values $\mu > \hat{\mu}$, that is service rates greater that the threshold that is effected.
-This is because at service rates lower than $\hat{\mu}$ we assume that the system is saturated, that is that the queueing capacity is full or is filled up fast enough that the time which it is not full or negligible.
+This is because at service rates lower than $\hat{\mu}$ we assume that the system is saturated, that is the queueing capacity is full or is filled up fast enough that the time which it is not full is negligible.
 Therefore in these situations the arrival rate, and so the baulking rate, cannot affect the time to deadlock, only the service rate and transition probabilities can.
 
-Looking at the inverse plot, the effect that the service rate $\mu$ has on the time to deadlock as $\beta$ varies, Figure~\ref{fig:varybetabymu}, an interesting effect occurs.
+The inverse plot, the effect that the service rate $\mu$ has on the time to deadlock as $\beta$ varies, is shown in Figure~\ref{fig:varybetabymu}.
 At low values of $\beta$ the greater the service rate the longer it takes to reach deadlock, however this effect is flipped at high values of $\beta$.
-At low $\beta$ not many customers join the queue (compared to a low $\beta$), and so a long service time in necessary to allow the queueing capacity to fill up, therefore a lower $\mu$ will yield quicker times to deadlock.
-At high values of $\beta$ many customers join the queue (compared to a a $\beta$), and so there is no need to wait for the queue to fill up, we can assume this will happen anyway.
-Therefore a lower service rate $\mu$ will cause longer for a blockage to occur that a higher service rate, and so a longer time to deadlock.
+At low $\beta$ not many customers join the queue (compared to a high $\beta$), and so a long service time in necessary to allow the queueing capacity to fill up, therefore a lower $\mu$ will yield quicker times to deadlock.
+At high values of $\beta$ many customers join the queue (compared to a low $\beta$), and so there is no need to wait for the queue to fill up, we can assume this will happen anyway.
+Therefore a lower service rate $\mu$ will result in a longer time for a blockage to occur, than that a higher service rate, thus a longer time to deadlock.
 
 \begin{figure}[!hbtp]
 \begin{center}
@@ -362,11 +363,11 @@ Therefore a lower service rate $\mu$ will cause longer for a blockage to occur t
 \label{fig:combinedeffect_betamu}
 \end{figure}
 
-Figure~\ref{fig:betathreshold} shows the effect of the baulking parameter $\beta$ on the service rate threshold.
+Figure~\ref{fig:betathreshold} shows the effect of the baulking parameter $\beta$ on the service rate threshold $\hat{\mu}$.
 As the baulking parameter is closely associated with the arrival rate $\Lambda$, similarly to the effect of $\Lambda$ on $\hat{\mu}$, the threshold increases as the baulking parameter increases.
 This is due to a high baulking parameter means that more customers join the queue, and so it takes a larger service rate to escape the saturated zone.
-This relationship is not linear; the general rate of increase of the function decreases as $\beta$ 
-increases.
+That is, under baulking we would require a larger average service time to ensure that the queueing occupancy fills between services.
+This relationship is not linear; the general rate of increase of the function decreases as $\beta$ increases.
 This effect is amplified for smaller values of $n$.
 
 \begin{figure}[!hbtp]

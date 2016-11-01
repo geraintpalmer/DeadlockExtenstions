@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.10.29)  1 NOV 2016 13:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.10.29)  1 NOV 2016 14:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -839,15 +839,6 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 
 (./cindywork.aux
 
-LaTeX Warning: Label `eqn:1nssAb' multiply defined.
-
-
-LaTeX Warning: Label `eqn:1nssBb' multiply defined.
-
-
-LaTeX Warning: Label `eqn:1nssCb' multiply defined.
-
-
 LaTeX Warning: Label `fig:varyLambdabybeta' multiply defined.
 
 
@@ -941,35 +932,35 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 LaTeX Warning: Reference `chp:markovmodelsofdeadlock' on page 1 undefined on in
 put line 44.
 
-<img/examplebaulking1.pdf, id=59, 433.62pt x 289.08pt>
-File: img/examplebaulking1.pdf Graphic file (type pdf)
-
-<use img/examplebaulking1.pdf>
-Package pdftex.def Info: img/examplebaulking1.pdf used on input line 77.
-(pdftex.def)             Requested size: 211.38832pt x 140.92703pt.
-
-<img/examplebaulking2.pdf, id=62, 433.62pt x 289.08pt>
-File: img/examplebaulking2.pdf Graphic file (type pdf)
-
-<use img/examplebaulking2.pdf>
-Package pdftex.def Info: img/examplebaulking2.pdf used on input line 82.
-(pdftex.def)             Requested size: 211.38832pt x 140.92703pt.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 92.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 92.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 92.
-
 [1
 
 {/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+<img/examplebaulking1.pdf, id=82, 433.62pt x 289.08pt>
+File: img/examplebaulking1.pdf Graphic file (type pdf)
+
+<use img/examplebaulking1.pdf>
+Package pdftex.def Info: img/examplebaulking1.pdf used on input line 78.
+(pdftex.def)             Requested size: 211.38832pt x 140.92703pt.
+
+<img/examplebaulking2.pdf, id=85, 433.62pt x 289.08pt>
+File: img/examplebaulking2.pdf Graphic file (type pdf)
+
+<use img/examplebaulking2.pdf>
+Package pdftex.def Info: img/examplebaulking2.pdf used on input line 83.
+(pdftex.def)             Requested size: 211.38832pt x 140.92703pt.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 93.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `subscript' on input line 93.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 93.
+
 (./img/1nodeexample_baulking.tex)
 File: img/1nodeexample_baulking.tex Graphic file (type tex)
  [2 <./img/examplebaulking1.pdf> <./img/examplebaulking2.pdf
@@ -983,54 +974,54 @@ File: img/markov_chain_1node_baulking1.tex Graphic file (type tex)
 
 
 LaTeX Warning: Reference `chp:markovmodelsofdeadlock' on page 3 undefined on in
-put line 151.
+put line 152.
 
-<img/baulking1_varyn.pdf, id=221, 578.16pt x 397.485pt>
+<img/baulking1_varyn.pdf, id=223, 578.16pt x 397.485pt>
 File: img/baulking1_varyn.pdf Graphic file (type pdf)
 
 <use img/baulking1_varyn.pdf>
-Package pdftex.def Info: img/baulking1_varyn.pdf used on input line 159.
+Package pdftex.def Info: img/baulking1_varyn.pdf used on input line 160.
 (pdftex.def)             Requested size: 281.85587pt x 193.77467pt.
 
-<img/baulk1_varyn.pdf, id=223, 578.16pt x 397.485pt>
+<img/baulk1_varyn.pdf, id=225, 578.16pt x 397.485pt>
 File: img/baulk1_varyn.pdf Graphic file (type pdf)
 
 <use img/baulk1_varyn.pdf>
-Package pdftex.def Info: img/baulk1_varyn.pdf used on input line 178.
+Package pdftex.def Info: img/baulk1_varyn.pdf used on input line 179.
 (pdftex.def)             Requested size: 211.38832pt x 145.32645pt.
 
-<img/baulk1_varyL.pdf, id=224, 578.16pt x 397.485pt>
+<img/baulk1_varyL.pdf, id=226, 578.16pt x 397.485pt>
 File: img/baulk1_varyL.pdf Graphic file (type pdf)
 
 <use img/baulk1_varyL.pdf>
-Package pdftex.def Info: img/baulk1_varyL.pdf used on input line 183.
+Package pdftex.def Info: img/baulk1_varyL.pdf used on input line 184.
 (pdftex.def)             Requested size: 211.38832pt x 145.32645pt.
 
-<img/baulk1_varymu.pdf, id=225, 578.16pt x 397.485pt>
+<img/baulk1_varymu.pdf, id=227, 578.16pt x 397.485pt>
 File: img/baulk1_varymu.pdf Graphic file (type pdf)
 
 <use img/baulk1_varymu.pdf>
-Package pdftex.def Info: img/baulk1_varymu.pdf used on input line 188.
+Package pdftex.def Info: img/baulk1_varymu.pdf used on input line 189.
 (pdftex.def)             Requested size: 211.38832pt x 145.32645pt.
 
-<img/baulk1_varyr11.pdf, id=226, 578.16pt x 397.485pt>
+<img/baulk1_varyr11.pdf, id=228, 578.16pt x 397.485pt>
 File: img/baulk1_varyr11.pdf Graphic file (type pdf)
 
 <use img/baulk1_varyr11.pdf>
-Package pdftex.def Info: img/baulk1_varyr11.pdf used on input line 193.
+Package pdftex.def Info: img/baulk1_varyr11.pdf used on input line 194.
 (pdftex.def)             Requested size: 211.38832pt x 145.32645pt.
  [3]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 205.
+(hyperref)                removing `math shift' on input line 206.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 205.
+(hyperref)                removing `subscript' on input line 206.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 205.
+(hyperref)                removing `math shift' on input line 206.
 
 (./img/markov_chain_1node_baulking2.tex
 Missing character: There is no ; in font nullfont!
@@ -1049,43 +1040,43 @@ e pdfs with page group included in a single page
 
 pdfTeX warning: pdflatex (file ./img/baulk1_varyr11.pdf): PDF inclusion: multip
 le pdfs with page group included in a single page
->] <img/vary_beta.pdf, id=486, 578.16pt x 397.485pt>
+>] <img/vary_beta.pdf, id=488, 578.16pt x 397.485pt>
 File: img/vary_beta.pdf Graphic file (type pdf)
  <use img/vary_beta.pdf>
-Package pdftex.def Info: img/vary_beta.pdf used on input line 265.
+Package pdftex.def Info: img/vary_beta.pdf used on input line 266.
 (pdftex.def)             Requested size: 281.85587pt x 193.77467pt.
 
-<img/varylambda_bybeta.pdf, id=491, 433.62pt x 289.08pt>
+<img/varylambda_bybeta.pdf, id=493, 433.62pt x 289.08pt>
 File: img/varylambda_bybeta.pdf Graphic file (type pdf)
 
 <use img/varylambda_bybeta.pdf>
-Package pdftex.def Info: img/varylambda_bybeta.pdf used on input line 281.
+Package pdftex.def Info: img/varylambda_bybeta.pdf used on input line 282.
 (pdftex.def)             Requested size: 211.38832pt x 140.92703pt.
 
-<img/varybeta_bylambda.pdf, id=492, 433.62pt x 289.08pt>
+<img/varybeta_bylambda.pdf, id=494, 433.62pt x 289.08pt>
 File: img/varybeta_bylambda.pdf Graphic file (type pdf)
 
 <use img/varybeta_bylambda.pdf>
-Package pdftex.def Info: img/varybeta_bylambda.pdf used on input line 286.
+Package pdftex.def Info: img/varybeta_bylambda.pdf used on input line 287.
 (pdftex.def)             Requested size: 211.38832pt x 140.92703pt.
 
-<img/varyr11_bybeta.pdf, id=493, 433.62pt x 289.08pt>
+<img/varyr11_bybeta.pdf, id=495, 433.62pt x 289.08pt>
 File: img/varyr11_bybeta.pdf Graphic file (type pdf)
 
 <use img/varyr11_bybeta.pdf>
-Package pdftex.def Info: img/varyr11_bybeta.pdf used on input line 298.
+Package pdftex.def Info: img/varyr11_bybeta.pdf used on input line 299.
 (pdftex.def)             Requested size: 211.38832pt x 140.92703pt.
 
-<img/varybeta_byr11.pdf, id=494, 433.62pt x 289.08pt>
+<img/varybeta_byr11.pdf, id=496, 433.62pt x 289.08pt>
 File: img/varybeta_byr11.pdf Graphic file (type pdf)
 
 <use img/varybeta_byr11.pdf>
-Package pdftex.def Info: img/varybeta_byr11.pdf used on input line 303.
+Package pdftex.def Info: img/varybeta_byr11.pdf used on input line 304.
 (pdftex.def)             Requested size: 211.38832pt x 140.92703pt.
 
 
 LaTeX Warning: Reference `chp:markovmodelsofdeadlock' on page 6 undefined on in
-put line 313.
+put line 314.
 
 [6 <./img/vary_beta.pdf>] [7 <./img/varylambda_bybeta.pdf> <./img/varybeta_byla
 mbda.pdf
@@ -1100,51 +1091,50 @@ le pdfs with page group included in a single page
 
 pdfTeX warning: pdflatex (file ./img/varybeta_byr11.pdf): PDF inclusion: multip
 le pdfs with page group included in a single page
->] <img/varyn_bybeta.pdf, id=764, 433.62pt x 289.08pt>
+>] <img/varyn_bybeta.pdf, id=766, 433.62pt x 289.08pt>
 File: img/varyn_bybeta.pdf Graphic file (type pdf)
 
 <use img/varyn_bybeta.pdf>
-Package pdftex.def Info: img/varyn_bybeta.pdf used on input line 322.
+Package pdftex.def Info: img/varyn_bybeta.pdf used on input line 323.
 (pdftex.def)             Requested size: 211.38832pt x 140.92703pt.
- <img/varybeta_byn.pdf, id=765, 433.62pt x 289.08pt>
+ <img/varybeta_byn.pdf, id=767, 433.62pt x 289.08pt>
 File: img/varybeta_byn.pdf Graphic file (type pdf)
 
 <use img/varybeta_byn.pdf>
-Package pdftex.def Info: img/varybeta_byn.pdf used on input line 327.
+Package pdftex.def Info: img/varybeta_byn.pdf used on input line 328.
 (pdftex.def)             Requested size: 211.38832pt x 140.92703pt.
 
 
 LaTeX Warning: Reference `chp:markovmodelsofdeadlock' on page 8 undefined on in
-put line 337.
+put line 338.
 
-<img/varymu_bybeta.pdf, id=769, 433.62pt x 289.08pt>
+<img/varymu_bybeta.pdf, id=771, 433.62pt x 289.08pt>
 File: img/varymu_bybeta.pdf Graphic file (type pdf)
 
 <use img/varymu_bybeta.pdf>
-Package pdftex.def Info: img/varymu_bybeta.pdf used on input line 351.
+Package pdftex.def Info: img/varymu_bybeta.pdf used on input line 352.
 (pdftex.def)             Requested size: 211.38832pt x 140.92703pt.
 
-<img/varybeta_bymu.pdf, id=770, 433.62pt x 289.08pt>
+<img/varybeta_bymu.pdf, id=772, 433.62pt x 289.08pt>
 File: img/varybeta_bymu.pdf Graphic file (type pdf)
 
 <use img/varybeta_bymu.pdf>
-Package pdftex.def Info: img/varybeta_bymu.pdf used on input line 356.
+Package pdftex.def Info: img/varybeta_bymu.pdf used on input line 357.
 (pdftex.def)             Requested size: 211.38832pt x 140.92703pt.
-
-<img/thresholdbeta_plot.pdf, id=772, 433.62pt x 289.08pt>
-File: img/thresholdbeta_plot.pdf Graphic file (type pdf)
-
-<use img/thresholdbeta_plot.pdf>
-Package pdftex.def Info: img/thresholdbeta_plot.pdf used on input line 374.
-(pdftex.def)             Requested size: 352.31625pt x 234.89014pt.
  [8 <./img/varyn_bybeta.pdf> <./img/varybeta_byn.pdf
 
 pdfTeX warning: pdflatex (file ./img/varybeta_byn.pdf): PDF inclusion: multiple
  pdfs with page group included in a single page
->]
+>] <img/thresholdbeta_plot.pdf, id=880, 433.62pt x 289.08pt>
+File: img/thresholdbeta_plot.pdf Graphic file (type pdf)
+
+<use img/thresholdbeta_plot.pdf>
+Package pdftex.def Info: img/thresholdbeta_plot.pdf used on input line 375.
+(pdftex.def)             Requested size: 352.31625pt x 234.89014pt.
+
 
 LaTeX Warning: Reference `chp:markovmodelsofdeadlock' on page 9 undefined on in
-put line 384.
+put line 385.
 
 [9 <./img/varymu_bybeta.pdf> <./img/varybeta_bymu.pdf
 
@@ -1161,7 +1151,7 @@ Missing character: There is no ™ in font cmr10!
  (./img/onoffdutycycle.tex)
 File: img/onoffdutycycle.tex Graphic file (type tex)
 
-Underfull \hbox (badness 10000) in paragraph at lines 426--430
+Underfull \hbox (badness 10000) in paragraph at lines 427--431
 
  []
 
@@ -1178,52 +1168,52 @@ Missing character: There is no ; in font nullfont!
 )
 File: img/markov_chain_1node_SV_offduty.tex Graphic file (type tex)
  [13]
-Underfull \hbox (badness 10000) in paragraph at lines 575--578
+Underfull \hbox (badness 10000) in paragraph at lines 576--579
 
  []
 
-[14] <img/method1method2_difftimestep.pdf, id=1098, 433.62pt x 289.08pt>
+[14] <img/method1method2_difftimestep.pdf, id=1100, 433.62pt x 289.08pt>
 File: img/method1method2_difftimestep.pdf Graphic file (type pdf)
 
 <use img/method1method2_difftimestep.pdf>
 Package pdftex.def Info: img/method1method2_difftimestep.pdf used on input line
- 680.
+ 681.
 (pdftex.def)             Requested size: 328.82707pt x 219.22668pt.
  [15] [16 <./img/method1method2_difftimestep.pdf>]
-<img/method1method2_sametimestep.pdf, id=1148, 433.62pt x 289.08pt>
+<img/method1method2_sametimestep.pdf, id=1150, 433.62pt x 289.08pt>
 File: img/method1method2_sametimestep.pdf Graphic file (type pdf)
 
 <use img/method1method2_sametimestep.pdf>
 Package pdftex.def Info: img/method1method2_sametimestep.pdf used on input line
- 730.
+ 731.
 (pdftex.def)             Requested size: 211.38832pt x 140.92703pt.
 
-<img/method1method2_sametimestep_diffs.pdf, id=1149, 433.62pt x 289.08pt>
+<img/method1method2_sametimestep_diffs.pdf, id=1151, 433.62pt x 289.08pt>
 File: img/method1method2_sametimestep_diffs.pdf Graphic file (type pdf)
 
 <use img/method1method2_sametimestep_diffs.pdf>
 Package pdftex.def Info: img/method1method2_sametimestep_diffs.pdf used on inpu
-t line 735.
+t line 736.
 (pdftex.def)             Requested size: 211.38832pt x 140.92703pt.
 
-<img/pdf_initial.pdf, id=1152, 433.62pt x 289.08pt>
+<img/pdf_initial.pdf, id=1154, 433.62pt x 289.08pt>
 File: img/pdf_initial.pdf Graphic file (type pdf)
  <use img/pdf_initial.pdf>
-Package pdftex.def Info: img/pdf_initial.pdf used on input line 760.
+Package pdftex.def Info: img/pdf_initial.pdf used on input line 761.
 (pdftex.def)             Requested size: 211.38832pt x 140.92703pt.
 
-<img/cdf_initial.pdf, id=1153, 433.62pt x 289.08pt>
+<img/cdf_initial.pdf, id=1155, 433.62pt x 289.08pt>
 File: img/cdf_initial.pdf Graphic file (type pdf)
  <use img/cdf_initial.pdf>
-Package pdftex.def Info: img/cdf_initial.pdf used on input line 765.
+Package pdftex.def Info: img/cdf_initial.pdf used on input line 766.
 (pdftex.def)             Requested size: 211.38832pt x 140.92703pt.
 
-<img/mc_sim_vary_n_scheduled_vacations.pdf, id=1155, 578.16pt x 397.485pt>
+<img/mc_sim_vary_n_scheduled_vacations.pdf, id=1157, 578.16pt x 397.485pt>
 File: img/mc_sim_vary_n_scheduled_vacations.pdf Graphic file (type pdf)
 
 <use img/mc_sim_vary_n_scheduled_vacations.pdf>
 Package pdftex.def Info: img/mc_sim_vary_n_scheduled_vacations.pdf used on inpu
-t line 779.
+t line 780.
 (pdftex.def)             Requested size: 328.82707pt x 226.0654pt.
  [17 <./img/method1method2_sametimestep.pdf> <./img/method1method2_sametimestep
 _diffs.pdf
@@ -1239,52 +1229,52 @@ pdfs with page group included in a single page
 pdfTeX warning: pdflatex (file ./img/mc_sim_vary_n_scheduled_vacations.pdf): PD
 F inclusion: multiple pdfs with page group included in a single page
 >]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 791.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 792.
 
  (/usr/local/texlive/2014/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 791.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 792.
 
-<img/cdf_vary_s.pdf, id=1352, 433.62pt x 289.08pt>
+<img/cdf_vary_s.pdf, id=1354, 433.62pt x 289.08pt>
 File: img/cdf_vary_s.pdf Graphic file (type pdf)
  <use img/cdf_vary_s.pdf>
-Package pdftex.def Info: img/cdf_vary_s.pdf used on input line 816.
+Package pdftex.def Info: img/cdf_vary_s.pdf used on input line 817.
 (pdftex.def)             Requested size: 211.38832pt x 140.92703pt.
 
-<img/ttd_vary_s.pdf, id=1353, 433.62pt x 289.08pt>
+<img/ttd_vary_s.pdf, id=1355, 433.62pt x 289.08pt>
 File: img/ttd_vary_s.pdf Graphic file (type pdf)
  <use img/ttd_vary_s.pdf>
-Package pdftex.def Info: img/ttd_vary_s.pdf used on input line 821.
+Package pdftex.def Info: img/ttd_vary_s.pdf used on input line 822.
 (pdftex.def)             Requested size: 211.38832pt x 140.92703pt.
 
-<img/cdf_vary_sv.pdf, id=1354, 433.62pt x 289.08pt>
+<img/cdf_vary_sv.pdf, id=1356, 433.62pt x 289.08pt>
 File: img/cdf_vary_sv.pdf Graphic file (type pdf)
  <use img/cdf_vary_sv.pdf>
-Package pdftex.def Info: img/cdf_vary_sv.pdf used on input line 833.
+Package pdftex.def Info: img/cdf_vary_sv.pdf used on input line 834.
 (pdftex.def)             Requested size: 211.38832pt x 140.92703pt.
 
-<img/ttd_vary_sv.pdf, id=1355, 433.62pt x 289.08pt>
+<img/ttd_vary_sv.pdf, id=1357, 433.62pt x 289.08pt>
 File: img/ttd_vary_sv.pdf Graphic file (type pdf)
  <use img/ttd_vary_sv.pdf>
-Package pdftex.def Info: img/ttd_vary_sv.pdf used on input line 838.
+Package pdftex.def Info: img/ttd_vary_sv.pdf used on input line 839.
 (pdftex.def)             Requested size: 211.38832pt x 140.92703pt.
 
 
 LaTeX Warning: Reference `chp:markovmodelsofdeadlock' on page 19 undefined on i
-nput line 850.
+nput line 851.
 
-<img/cdf_vary_n.pdf, id=1358, 433.62pt x 289.08pt>
+<img/cdf_vary_n.pdf, id=1360, 433.62pt x 289.08pt>
 File: img/cdf_vary_n.pdf Graphic file (type pdf)
  <use img/cdf_vary_n.pdf>
-Package pdftex.def Info: img/cdf_vary_n.pdf used on input line 855.
+Package pdftex.def Info: img/cdf_vary_n.pdf used on input line 856.
 (pdftex.def)             Requested size: 211.38832pt x 140.92703pt.
 
-<img/ttd_vary_n.pdf, id=1359, 433.62pt x 289.08pt>
+<img/ttd_vary_n.pdf, id=1361, 433.62pt x 289.08pt>
 File: img/ttd_vary_n.pdf Graphic file (type pdf)
  <use img/ttd_vary_n.pdf>
-Package pdftex.def Info: img/ttd_vary_n.pdf used on input line 860.
+Package pdftex.def Info: img/ttd_vary_n.pdf used on input line 861.
 (pdftex.def)             Requested size: 211.38832pt x 140.92703pt.
 
 [19] [20 <./img/cdf_vary_s.pdf> <./img/ttd_vary_s.pdf
@@ -1307,42 +1297,42 @@ dfs with page group included in a single page
 
 pdfTeX warning: pdflatex (file ./img/ttd_vary_n.pdf): PDF inclusion: multiple p
 dfs with page group included in a single page
->] <img/cdf_vary_mu.pdf, id=1644, 433.62pt x 289.08pt>
+>] <img/cdf_vary_mu.pdf, id=1646, 433.62pt x 289.08pt>
 File: img/cdf_vary_mu.pdf Graphic file (type pdf)
 
 <use img/cdf_vary_mu.pdf>
-Package pdftex.def Info: img/cdf_vary_mu.pdf used on input line 879.
+Package pdftex.def Info: img/cdf_vary_mu.pdf used on input line 880.
 (pdftex.def)             Requested size: 211.38832pt x 140.92703pt.
- <img/ttd_vary_mu.pdf, id=1645, 433.62pt x 289.08pt>
+ <img/ttd_vary_mu.pdf, id=1647, 433.62pt x 289.08pt>
 File: img/ttd_vary_mu.pdf Graphic file (type pdf)
 
 <use img/ttd_vary_mu.pdf>
-Package pdftex.def Info: img/ttd_vary_mu.pdf used on input line 884.
+Package pdftex.def Info: img/ttd_vary_mu.pdf used on input line 885.
 (pdftex.def)             Requested size: 211.38832pt x 140.92703pt.
- <img/cdf_vary_L.pdf, id=1650, 433.62pt x 289.08pt>
+ <img/cdf_vary_L.pdf, id=1652, 433.62pt x 289.08pt>
 File: img/cdf_vary_L.pdf Graphic file (type pdf)
 
 <use img/cdf_vary_L.pdf>
-Package pdftex.def Info: img/cdf_vary_L.pdf used on input line 902.
+Package pdftex.def Info: img/cdf_vary_L.pdf used on input line 903.
 (pdftex.def)             Requested size: 211.38832pt x 140.92703pt.
- <img/ttd_vary_L.pdf, id=1651, 433.62pt x 289.08pt>
+ <img/ttd_vary_L.pdf, id=1653, 433.62pt x 289.08pt>
 File: img/ttd_vary_L.pdf Graphic file (type pdf)
 
 <use img/ttd_vary_L.pdf>
-Package pdftex.def Info: img/ttd_vary_L.pdf used on input line 907.
+Package pdftex.def Info: img/ttd_vary_L.pdf used on input line 908.
 (pdftex.def)             Requested size: 211.38832pt x 140.92703pt.
- <img/cdf_vary_r11.pdf, id=1652, 433.62pt x 289.08pt>
+ <img/cdf_vary_r11.pdf, id=1654, 433.62pt x 289.08pt>
 File: img/cdf_vary_r11.pdf Graphic file (type pdf)
 
 <use img/cdf_vary_r11.pdf>
-Package pdftex.def Info: img/cdf_vary_r11.pdf used on input line 920.
+Package pdftex.def Info: img/cdf_vary_r11.pdf used on input line 921.
 (pdftex.def)             Requested size: 211.38832pt x 140.92703pt.
 
-<img/ttd_vary_r11.pdf, id=1653, 433.62pt x 289.08pt>
+<img/ttd_vary_r11.pdf, id=1655, 433.62pt x 289.08pt>
 File: img/ttd_vary_r11.pdf Graphic file (type pdf)
 
 <use img/ttd_vary_r11.pdf>
-Package pdftex.def Info: img/ttd_vary_r11.pdf used on input line 925.
+Package pdftex.def Info: img/ttd_vary_r11.pdf used on input line 926.
 (pdftex.def)             Requested size: 211.38832pt x 140.92703pt.
  (./cindywork.bbl
 Underfull \hbox (badness 3713) in paragraph at lines 14--17
@@ -1367,13 +1357,13 @@ pdfTeX warning: pdflatex (file ./img/cdf_vary_r11.pdf): PDF inclusion: multiple
 pdfTeX warning: pdflatex (file ./img/ttd_vary_r11.pdf): PDF inclusion: multiple
  pdfs with page group included in a single page
 >]) [23]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 937.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 937.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 938.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 938.
  (./cindywork.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 937.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 937.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 938.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 938.
 Package rerunfilecheck Info: File `cindywork.out' has not changed.
-(rerunfilecheck)             Checksum: 9D435631532A6B6565D0602464ED3C1C;861.
+(rerunfilecheck)             Checksum: 300FD70E3A859107F639F5F3A7B86C40;791.
 
 
 LaTeX Warning: There were undefined references.
@@ -1381,13 +1371,13 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 937.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 938.
  ) 
 Here is how much of TeX's memory you used:
- 22021 strings out of 493117
- 424837 string characters out of 6135432
- 513602 words of memory out of 5000000
- 24884 multiletter control sequences out of 15000+600000
+ 22024 strings out of 493117
+ 424879 string characters out of 6135432
+ 513683 words of memory out of 5000000
+ 24887 multiletter control sequences out of 15000+600000
  20051 words of font info for 77 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,16n,96p,434b,1285s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1417,10 +1407,10 @@ onts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2014/texmf-dist/fon
 ts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2014/texmf-dist/font
 s/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2014/texmf-dist/fonts
 /type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on cindywork.pdf (23 pages, 902530 bytes).
+Output written on cindywork.pdf (23 pages, 902407 bytes).
 PDF statistics:
- 2060 PDF objects out of 2073 (max. 8388607)
- 753 compressed objects within 8 object streams
+ 2062 PDF objects out of 2073 (max. 8388607)
+ 755 compressed objects within 8 object streams
  94 named destinations out of 1000 (max. 500000)
  282 words of extra memory for PDF output out of 10000 (max. 10000000)
 
