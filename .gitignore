@@ -1,4 +1,2 @@
-*.aux
-*.fdb_latexmk
-*.fls
-*.log
+*.ipynb_checkpoints*
+*.DS_Store*
